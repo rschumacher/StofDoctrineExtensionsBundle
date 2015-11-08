@@ -168,6 +168,22 @@ disable the filter. Here is an example:
     $filters = $em->getFilters();
     $filters->disable('softdeleteable');
 
+
+Enabling extensions in StofDoctrineExtensions:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To enable an individual extension, add the following:
+
+.. code-block:: yml
+
+  # app/config/config.yml
+  stof_doctrine_extensions:
+      orm:
+        default:
+          timestampable: true
+          blameable: true
+
+
 Using ``Uploadable`` extension
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
